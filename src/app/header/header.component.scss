@@ -1,0 +1,29 @@
+@import "../../stylesheets/reset.scss";
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // position: absolute;
+  // z-index: 1;
+  background-color: #121f28;
+
+  .navbtns {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    ul {
+      @include reset-list;
+      display: flex;
+      margin-right: 200px;
+
+      li {
+        margin-right: 24px;
+        // font-weight: 700;
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+}

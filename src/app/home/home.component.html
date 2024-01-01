@@ -1,0 +1,9 @@
+<div class="row">
+  <ngb-carousel [interval]="3000" [pauseOnHover]="pauseOnHover">
+    <ng-template ngbSlide *ngFor="let imageName of imageNames">
+      <div class="picsum-img-wrapper">
+        <img [src]="getImagePath(imageName)" />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
